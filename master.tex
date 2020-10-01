@@ -1,0 +1,33 @@
+ 
+\documentclass{ctexrep}
+\usepackage{gbt7714}
+\usepackage[sectionbib]{chapterbib}
+
+%% Hack to build a MWE
+\usepackage{filecontents}
+\begin{filecontents}{Biblio.bib}
+	@article{greenwade93,
+		author  = "George D. Greenwade",
+		title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+		year    = "1993",
+		journal = "TUGBoat",
+		volume  = "14",
+		number  = "3",
+		pages   = "342--351"
+	}
+	@book{goossens93,
+		author    = "Michel Goossens and Frank Mittelbach and Alexander Samarin",
+		title     = "The LaTeX Companion",
+		year      = "1993",
+		publisher = "Addison-Wesley",
+		address   = "Reading, Massachusetts"
+	}
+\end{filecontents}
+%% End of hack
+
+
+\begin{document}
+	你好！我是中国人！
+	\include{Chapter1}
+	\include{Chapter2}
+\end{document}
